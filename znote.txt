@@ -1,0 +1,9 @@
+xapmor>bootstrap>app.php
+
+->withMiddleware(function (Middleware $middleware) {
+     $middleware->validateCsrfTokens(except: [
+            'api/*',
+        ]);
+}
+
+for disable csrf token
